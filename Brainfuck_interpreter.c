@@ -46,7 +46,7 @@ int main(int argc, char *argv[]){
         printf("%c", memory[mp]);
         break;
       case ',':
-        memory[mp] = getch();
+        memory[mp] = getchar();
         break;
       case '[':
         if(memory[mp]){
@@ -68,6 +68,6 @@ int main(int argc, char *argv[]){
     }
     cp++;
   }
-  getch();	
+  getchar();	
   return 0;
 }
