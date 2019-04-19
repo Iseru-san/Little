@@ -46,7 +46,8 @@ int main(int argc, char *argv[]){
         printf("%c", memory[mp]);
         break;
       case ',':
-        memory[mp] = getchar();
+        scanf("%c", &memory[mp]);
+        scanf("%c", &buffer);
         break;
       case '[':
         if(memory[mp]){
@@ -68,6 +69,6 @@ int main(int argc, char *argv[]){
     }
     cp++;
   }
-  getchar();	
+  scanf("%c", &buffer);	
   return 0;
 }
